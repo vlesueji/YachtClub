@@ -27,7 +27,7 @@ gulp.task('clean', function (done){
 
 gulp.task('copyImages', function (){
   return gulp
-    .src('./src/img/**/*')
+    .src('./src/img/**/*', { encoding: false })
     .pipe(gulp.dest('./dist/img/'));
 });
 
