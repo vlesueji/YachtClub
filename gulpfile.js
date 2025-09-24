@@ -5,6 +5,8 @@ const fileInclude = require('gulp-file-include');
 const clean = require('gulp-clean');
 const fs = require('fs');
 const sourceMaps = require('gulp-sourcemaps');
+const cssMin = require('gulp-cssnano');
+const rename = require('gulp-rename');
 
 const fileIncludeOptions = {
   prefix: '@@',
@@ -42,6 +44,8 @@ gulp.task('sass', function() {
     .src('./src/scss/**/*.scss')
     .pipe(sourceMaps.init())
     .pipe(sass())
+    .pipe(cssMin())
+    .pipe(rename({suffix: '.min'}))
     .pipe(sourceMaps.write())
     .pipe(gulp.dest('./dist/css'))
 });
