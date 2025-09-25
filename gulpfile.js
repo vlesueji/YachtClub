@@ -44,6 +44,7 @@ gulp.task('sass', function() {
     .src('./src/scss/**/*.scss')
     .pipe(sourceMaps.init())
     .pipe(sass())
+    .pipe(gulp.dest('./dist/css'))
     .pipe(cssMin())
     .pipe(rename({suffix: '.min'}))
     .pipe(sourceMaps.write())
