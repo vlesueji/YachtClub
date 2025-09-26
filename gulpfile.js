@@ -7,6 +7,7 @@ const fs = require('fs');
 const sourceMaps = require('gulp-sourcemaps');
 const cssMin = require('gulp-cssnano');
 const rename = require('gulp-rename');
+const webpHtml = require('gulp-webp-retina-html');
 
 const fileIncludeOptions = {
   prefix: '@@',
@@ -58,6 +59,13 @@ gulp.task('fileInclude', function(){
     .pipe(gulp.dest('./dist/'))
 });
 
+gulp.task('htmlWebp', function (){
+  return gulp
+    .src('./src/**/*.html')
+    .pipe(webpHtml())
+    .pipe(gulp.dest('./dist/'))
+});
+
 gulp.task('startServer', function (){
   return gulp
     .src('./dist/')
@@ -66,13 +74,13 @@ gulp.task('startServer', function (){
 
 gulp.task('watch', function (){
   gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass'));
-  gulp.watch('./src/**/*.html', gulp.parallel('fileInclude'));
+  gulp.watch('./src/**/*.html', gulp.parallel('fileInclude', 'htmlWebp'));
   gulp.watch('./src/images/**/*', gulp.parallel('copyImages'));
   gulp.watch('./src/fonts/**/*', gulp.parallel('copyFonts'));
 });
 
 gulp.task('default',
   gulp.series ('clean',
-    gulp.parallel ('sass', 'fileInclude', 'copyImages', 'copyFonts'),
+    gulp.parallel ('sass', 'fileInclude', 'htmlWebp', 'copyImages', 'copyFonts'),
     gulp.parallel('startServer', 'watch')));
 
