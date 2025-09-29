@@ -18,19 +18,6 @@ const startServerOptions = {
   open: true
 };
 
-const webpHtmlOptions = {
-  extensions: ['jpg', 'jpeg', 'png', 'gif'],
-  retina: {
-    1: '',
-    2: '@2x',
-    3: '@3x',
-    4: '@4x'
-  },
-  checkExists: false,
-  noWebp: false,
-  publicPath: '.'
-}
-
 gulp.task('clean', function (done){
   if(fs.existsSync('./dist/')) {
     return gulp
