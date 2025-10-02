@@ -4,7 +4,14 @@ $breakpoints: (
 );
 
 :root {
+  //colors
   --accent-color: #00C6BD;
   --header-color: #163152;
   --font-color: #283C54;
+
+  //font-weights
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
 }
