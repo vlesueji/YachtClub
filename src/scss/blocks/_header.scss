@@ -1,7 +1,5 @@
-.header {
-  &__menu {
-    &-item {
-      text-transform: uppercase;
-    }
+.header-menu {
+  &__link {
+    text-transform: uppercase;
   }
 }
