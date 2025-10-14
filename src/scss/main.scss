@@ -2,4 +2,8 @@
 @use "normalize";
 @use "variables";
 @use "util";
+@use "globals";
+@use "media";
+@use "mixins";
+
 @use "./blocks/header";
