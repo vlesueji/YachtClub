@@ -1,10 +1,10 @@
 .header {
   display: flex;
+  margin-top: 1rem;
   flex-direction: row;
   justify-content: space-between;
 
   &__logo {
-    margin-top: 20px;
   }
 }
 
@@ -13,9 +13,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+
+  &__item:last-child {
+    margin-left: 4rem;
+  }
+
   &__link {
     text-transform: uppercase;
     font-family: 'noto-sans', Arial, sans-serif;
+    font-size: 14px;
+    color: var(--header-color);
   }
 }
