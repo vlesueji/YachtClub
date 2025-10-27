@@ -1,3 +1,6 @@
+@use "mixins";
+
 p {
   color: var(--header-color);
 }
+
