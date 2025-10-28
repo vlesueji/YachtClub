@@ -1,6 +1,10 @@
-@use "mixins";
+@use "media";
 
 p {
   color: var(--header-color);
+}
+
+@include media.hover() {
+  background-color: #00C6BD;
 }
 
