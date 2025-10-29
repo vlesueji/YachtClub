@@ -4,4 +4,10 @@ p {
   color: var(--header-color);
 }
 
+a {
+  @include media.hover {
+    color: var(--accent-color);
+  }
+}
+
 
