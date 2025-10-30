@@ -8,7 +8,6 @@ a {
   @include media.hover {
     color: var(--accent-color);
     opacity: 0.4;
-    transition: 0.2ms ease-in-out;
   }
 }
 
