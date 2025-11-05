@@ -1,3 +1,5 @@
+@use "variables";
+
 @mixin hover {
   @media(hover: hover) {
     &:hover {
@@ -8,5 +10,13 @@
     &:active {
       @content
     }
+  }
+}
+
+//медиа запросы на max-width с использованием breakpoints:
+@mixin respond-down($breakpoint) {
+  $max-width: map-get(variables.$breakpoints, $breakpoint);
+  @media (max-width: $max-width) {
+    @content;
   }
 }
