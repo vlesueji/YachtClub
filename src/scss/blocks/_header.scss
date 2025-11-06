@@ -19,6 +19,14 @@
   align-items: center;
   gap: 2rem;
 
+  @include media.respond-down('mobile') {
+    display: none;
+  }
+
+  @include media.respond-down('laptop') {
+    display: none;
+  }
+
   &__item:last-child {
     margin-left: 4rem;
   }
