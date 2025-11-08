@@ -21,6 +21,8 @@
 
   @include media.respond-down('mobile') {
     display: none;
+    border-style: solid;
+    border-color: red;
   }
 
   @include media.respond-down('laptop') {
