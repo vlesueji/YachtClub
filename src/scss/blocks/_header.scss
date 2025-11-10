@@ -23,6 +23,7 @@
     display: none;
     border-style: solid;
     border-color: red;
+    border-width: 2;
   }
 
   @include media.respond-down('laptop') {
