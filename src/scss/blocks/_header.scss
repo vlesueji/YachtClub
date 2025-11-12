@@ -20,13 +20,10 @@
   gap: 2rem;
 
   @include media.respond-down('mobile') {
+    display: flex;
     border-style: solid;
     border-color: red;
-    border-width: 2;
-  }
-
-  @include media.respond-down('laptop') {
-    display: none;
+    border-width: 2px;
   }
 
   &__item:last-child {
