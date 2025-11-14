@@ -9,6 +9,7 @@
   &__logo {
     display: flex;
     flex-shrink: 0;
+    margin-right: 2rem;
   }
 }
 
@@ -35,5 +36,6 @@
     font-family: 'noto-sans', Arial, sans-serif;
     font-size: 14px;
     color: var(--header-color);
+    text-wrap: nowrap;
   }
 }
