@@ -27,9 +27,10 @@
     border-width: 1px;
   }
 
-  &__item {}
-  @include media.respond-down('mobile') {
-    display: none;
+  &__item {
+    @include media.respond-down('mobile') {
+      display: none;
+    }
   }
 
   &__item:last-child {
