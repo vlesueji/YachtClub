@@ -23,7 +23,7 @@
   @include media.respond-down('mobile') {
     display: flex;
     border-style: solid;
-    border-color: red;
+    border-color: green;
     border-width: 1px;
   }
 
