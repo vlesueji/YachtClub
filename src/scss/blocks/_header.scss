@@ -22,7 +22,7 @@
 
   @include media.respond-down('mobile') {
     display: flex;
-    border-style: dot-dash;
+    border-style: solid;
     border-color: green;
     border-width: 1px;
   }
