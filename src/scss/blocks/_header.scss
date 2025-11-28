@@ -27,7 +27,7 @@
 
   &__item {
     @include media.respond-down('mobile') {
-      display: none;
+      @include mixins.hidden;
     }
   }
 
