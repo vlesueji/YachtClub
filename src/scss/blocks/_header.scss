@@ -19,7 +19,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: rem;
+  gap: 2rem;
 
   @include media.respond-down('mobile') {
     display: flex;
