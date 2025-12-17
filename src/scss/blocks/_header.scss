@@ -1,17 +1,13 @@
 @use "../media";
 @use "../mixins";
 
-$main-color: red;
-
 .header {
-  background-color: $main-color;
   display: flex;
   margin-top: 1rem;
   flex-direction: row;
   justify-content: space-between;
 
   &__logo {
-    $main-color: green !global;
     display: flex;
     flex-shrink: 0;
     margin-right: 1rem;
@@ -19,7 +15,6 @@ $main-color: red;
 }
 
 .header-menu {
-  background-color: $main-color;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
