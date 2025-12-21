@@ -16,7 +16,7 @@
 
 //медиа запросы на max-width с использованием breakpoints:
 @mixin respond-down($breakpoint) {
-  $max-width: map-get(variables.$breakpoints, $breakpoint);
+  $max-width: map.get(variables.$breakpoints, $breakpoint);
   @media (max-width: $max-width) {
     @content;
   }

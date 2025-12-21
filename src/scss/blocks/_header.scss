@@ -29,6 +29,9 @@
     @include media.respond-down('mobile') {
       @include mixins.hidden;
     }
+    @include media.respond-down('laptop') {
+      @include mixins.hidden;
+    }
   }
 
   &__item:last-child {
