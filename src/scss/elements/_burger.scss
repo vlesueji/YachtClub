@@ -1,5 +1,7 @@
+@use "../media";
+
 .burger-button {
-  display: flex;
+  display: none;
   width: 2rem;
   height: 2rem;
   border-style: solid;
@@ -7,6 +9,14 @@
   border-color: #000;
   align-items: center;
   justify-content: center;
+
+  @include media.respond-down('laptop') {
+    display: flex;
+  }
+
+  @include media.respond-down('mobile') {
+    display: flex;
+  }
 }
 
 .burger-button::after {
