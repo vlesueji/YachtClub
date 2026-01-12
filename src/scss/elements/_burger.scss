@@ -1,0 +1,18 @@
+.burger-button {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-button::after {
+  content: "";
+  width: 70%;
+  height: 1px;
+  background-color: #000;
+  box-shadow: 0 5px, 0 -5px;
+}
