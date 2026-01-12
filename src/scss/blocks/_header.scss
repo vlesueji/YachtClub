@@ -2,7 +2,6 @@
 @use "../mixins";
 
 .header {
-  @include mixins.accent-border;
   display: flex;
   margin-top: 1rem;
   flex-direction: row;
