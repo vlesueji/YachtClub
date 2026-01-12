@@ -2,16 +2,27 @@
 @use "../mixins";
 
 .header {
+  @include mixins.accent-border;
   display: flex;
   margin-top: 1rem;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
   &__logo {
     display: flex;
     flex-shrink: 0;
     margin-right: 1rem;
   }
+}
+
+.burger-button {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
 }
 
 .header-menu {
@@ -21,12 +32,16 @@
   align-items: center;
   gap: 2.5vw;
 
+  @include media.respond-down('laptop') {
+    @include mixins.hidden;
+  }
+
   @include media.respond-down('mobile') {
     @include mixins.hidden;
   }
 
-  @include media.respond-down('laptop') {
-    @include mixins.hidden;
+  &__item:last-child {
+    margin-left: 5vw;
   }
 
   &__link {

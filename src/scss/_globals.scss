@@ -1,15 +1,5 @@
-@use "media";
-
 p {
   color: var(--header-color);
-}
-
-a {
-  @include media.hover {
-    color: var(--active-color);
-    opacity: 0.4;
-    transition: all 0.2s ease;
-  }
 }
 
 

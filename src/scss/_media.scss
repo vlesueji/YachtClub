@@ -23,7 +23,7 @@
 }
 
 .active-effect {
-  @include media.hover {
+  @include hover {
     color: var(--active-color);
     opacity: 0.4;
     transition: all 0.2s ease;
