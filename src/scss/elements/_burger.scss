@@ -9,7 +9,6 @@
   border-color: #000;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
 
   &-close {
     display: none;
@@ -20,7 +19,6 @@
     border-color: #000;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
 
     @include media.respond-down('laptop') {
       display: flex;
