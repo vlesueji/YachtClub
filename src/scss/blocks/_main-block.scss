@@ -4,5 +4,5 @@
   display: flex;
   width: 100vw;
   height: 1000px;
-  @include accent-border;
+  @include mixins.accent-border;
 }

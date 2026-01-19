@@ -3,6 +3,8 @@
 
 .header {
   display: flex;
+  position: sticky;
+  top: 1rem;
   margin-top: 1rem;
   flex-direction: row;
   justify-content: space-between;
