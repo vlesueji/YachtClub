@@ -8,4 +8,15 @@ a {
   color: var(--header-color);
 }
 
+h1{
+  font-family: 'noto-sans', Arial, sans-serif;
+  font-size: 3em;
+  color: var(--header-color);
+  font-style: italic;
+  text-transform: uppercase;
+  margin-left: 5rem;
+  max-width: 30rem;
+  line-height: 7rem;
+}
+
 
