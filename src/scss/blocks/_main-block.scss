@@ -13,6 +13,7 @@
   @include mixins.accent-border;
 
   swiper {
-
+    width: 100%;
+    display: flex;
   }
 }
