@@ -2,6 +2,7 @@
 @use "../mixins";
 
 .header {
+  background-color:  var(--header-bg-color);
   display: flex;
   position: sticky;
   z-index: 1000;
