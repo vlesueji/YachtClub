@@ -21,15 +21,28 @@
     top: -4em;
     z-index: -1;
 
+    &__img {
+      width: 90%;
+    }
+
     .control {
       display: flex;
       align-items: center;
+      width: 100%;
 
       .right {
-        padding-inline: 2rem;
+        display: flex;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
       }
       .left {
-        padding-inline: 2rem;
+        display: flex;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
